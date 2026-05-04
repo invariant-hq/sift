@@ -1,0 +1,15 @@
+(executable
+ (name main)
+ (public_name sift)
+ (package sift)
+ (libraries
+  unix
+  mosaic
+  sift_runner
+  sift.crs
+  sift.diff
+  sift.feature
+  sift.git
+  sift.review
+  sift.store
+  sift.tui))

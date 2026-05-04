@@ -1,0 +1,12 @@
+(library
+ (name sift_tui)
+ (public_name sift.tui)
+ (libraries
+  matrix
+  mosaic
+  mosaic.ui
+  sift.crs
+  sift.diff
+  sift.feature
+  sift.review
+  tree-sitter.ocaml))

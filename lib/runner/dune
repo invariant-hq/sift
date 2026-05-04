@@ -1,0 +1,3 @@
+(library
+ (name sift_runner)
+ (libraries sift.git sift.review))

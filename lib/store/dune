@@ -1,0 +1,4 @@
+(library
+ (name sift_store)
+ (public_name sift.store)
+ (libraries sift.crs sift.diff sift.feature sift.review))

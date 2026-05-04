@@ -1,0 +1,4 @@
+(library
+ (name sift_git)
+ (public_name sift.git)
+ (libraries unix sift.crs sift.diff sift.feature))

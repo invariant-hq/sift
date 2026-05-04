@@ -1,0 +1,56 @@
+(test
+ (name test_crs)
+ (modules test_crs)
+ (libraries windtrap sift.crs))
+
+(test
+ (name test_diff)
+ (modules test_diff)
+ (libraries windtrap sift.diff))
+
+(test
+ (name test_feature)
+ (modules test_feature)
+ (libraries windtrap sift.feature sift.diff))
+
+(test
+ (name test_review)
+ (modules test_review)
+ (libraries windtrap sift.review sift.feature sift.diff sift.crs))
+
+(test
+ (name test_tui)
+ (modules test_tui)
+ (libraries
+  windtrap
+  mosaic
+  mosaic.ui
+  matrix
+  toffee
+  sift.tui
+  sift.review
+  sift.feature
+  sift.diff
+  sift.crs))
+
+(test
+ (name test_store)
+ (modules test_store)
+ (libraries windtrap sift.store sift.review sift.feature sift.diff sift.crs))
+
+(test
+ (name test_git)
+ (modules test_git)
+ (libraries unix windtrap sift.git sift.feature sift.diff sift.crs))
+
+(test
+ (name test_runner)
+ (modules test_runner)
+ (libraries
+  windtrap
+  sift_runner
+  sift.git
+  sift.review
+  sift.feature
+  sift.diff
+  sift.crs))

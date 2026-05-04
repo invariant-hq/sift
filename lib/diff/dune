@@ -1,0 +1,3 @@
+(library
+ (name sift_diff)
+ (public_name sift.diff))
